@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+}
+nav{
+    background-color:lightcoral;
+    padding: 10px;
+}
+a
+{
+    font-weight: 100;
+    text-decoration: none;
+    color: aqua;
+}

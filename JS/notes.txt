@@ -1,6 +1,66 @@
 variables 
 -----------
-let var const
+variables are like containers for storing values we can create a variable using these keywords (let var const)
+
+ex:
+var age = 28;
+let age = 30;
+const name ='santhosh';
+
+dom
+------
+document object model(dom) ==> manipulating html & css html dom tree
+dom methods ==> getelement byid
+events ==> onclick event
+
+dom is the structured representation of the content in the document created by browser
+
+tree structured representation of html document created by the browser it allows js to change the document  structure style & content 
+
+the dom tree represents html documents as nodes each node  is refered to  as an object 
+
+it is the entry point of the dom  
+
+to access any  html element u should  always start  with accessing  the document object first 
+
+document.getElementById('headingElement)
+
+getElementById method helps to select the html element with specific id
+
+
+2.4 Properties
+2.4.1 textContent
+To manipulate the text within the HTML Element, we use textContent Property.
+
+document.getElementById('headingElement).textContent ='Latest technologies'
+
+2.4.2 style
+The style property is used to get or set a specific style of an HTML Element using different CSS properties.
+
+Use Camel Case naming convention (starting letter of each word should be in the upper case except for the first word) for naming the Style Object Properties.
+
+For example, color, fontFamily, backgroundColor, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
