@@ -1,4 +1,11 @@
-variables (let var const)
+variables 
+-----------
+let var const
+
+
+
+
+
 datatypes(string,Number,Bigint,boolean,array,object) 
 
 myArray = [1,six",false]
