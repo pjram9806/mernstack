@@ -1,0 +1,41 @@
+variables (let var const)
+datatypes(string,Number,Bigint,boolean,array,object) 
+
+myArray = [1,six",false]
+
+myArray[0]
+
+console.log(myarray);
+
+object 
+
+key:value
+
+{name:'rj',
+age:25}
+
+
+myObject.name
+
+
+operators(as,log && || ! ?,
+conditional statements if 
+control statements for for each for in for of 
+arrays
+objects
+functions
+
+
+
+ES6
+async/await
+promises
+template string
+
+
+
+localStorage stores key-value pairs as strings.
+
+Data persists even after refreshing or closing the browser.
+
+You can only store strings directly, so for objects/arrays, use JSON.stringify() and JSON.parse().

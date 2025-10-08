@@ -1,0 +1,34 @@
+props & state 
+----------------
+props ==> transfer data from 1 component to another component
+
+props is passed in the form of  attribute
+
+ex:<img src = 'abc'>
+
+state
+-------
+the data itself maintained by the component
+the component will maintain the data with itself
+
+component
+----------
+a piece of ui 
+
+react js expression ==> {}
+
+angular & vue js ==> {{}}
+
+concepts in reactjs
+----------------------
+state|props|propsTypes|props-drilling(parent-child,child-parent)|contextApi
+conditional rendering ?
+control rendering map method
+
+
+
+events-functions
+-----------------
+onclick = {functionName}
+
+https://chatgpt.com/s/t_6874886b2c1c81918ba11c2a6a5d8a1f

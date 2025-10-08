@@ -1,0 +1,36 @@
+Asynchronous javascript
+-------------------------
+callbacks
+callbacks hell
+promises
+async/await
+higher order functions
+method chaining 
+
+synchronous & Asynchronous
+-------------------------------
+Javascript is a single threded(it can perform only 1 action at a time)
+
+Asynchronous programming provides a mechanism for managing long running operations without interrupting the flow of the program
+
+Asynchronous operations uses callbacks/promises or async/await syntax
+
+
+asynchronous promises
+------------------------
+server(request) ==> response ==> return(promise) ==> fail/success
+
+if-else(synchronous)
+
+conditional execution
+if - true
+else -false
+
+promise (asynchronous)
+manage execution
+
+promises will be written in api promises
+
+error handling 
+
+new promise((resolve,reject)=>{}) 1.pending,2.fullfilled,3.rejected

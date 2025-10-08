@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container mt-4">
+  <h3 class="mb-3 text-success">Student Report Card</h3>
+  <form id="reportForm">
+    <div class="mb-3">
+      <label for="studentName" class="form-label">Student Name</label>
+      <input type="text" class="form-control" id="studentName" placeholder="Enter student name" required>
+    </div>
+    <div class="mb-3">
+      <label for="mark1" class="form-label">Maths</label>
+      <input type="number" class="form-control" id="mark1" placeholder="Enter Maths mark" required>
+    </div>
+    <div class="mb-3">
+      <label for="mark2" class="form-label">Social</label>
+      <input type="number" class="form-control" id="mark2" placeholder="Enter Social mark" required>
+    </div>
+    <div class="mb-3">
+      <label for="mark3" class="form-label">Science</label>
+      <input type="number" class="form-control" id="mark3" placeholder="Enter Science mark" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+  </form>
+</div>
+
+
+<!-- Report Card -->
+<div class="container mt-4">
+  <div id="reportCard" class="card d-none shadow-sm border-primary">
+    <div class="card-body">
+      <h4 id="nameDisplay" class="card-title text-primary"></h4>
+      <p class="card-text"><strong>Total:</strong> <span id="totalMarks"></span></p>
+      <p class="card-text"><strong>Average:</strong> <span id="avg"></span></p>
+      <p class="card-text"><strong>Grade:</strong> <span id="grade"></span></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script src="reportCard.js"></script>
+</body>
+</html>
+
+
