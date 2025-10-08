@@ -1,0 +1,169 @@
+node js
+--------
+node js is a runtime for javascript environment built on chrome engine v8
+
+Node.js uses an event-driven, non-blocking model.It can handle many connections at once without waiting for one to finish before starting another.
+
+to work with node js u need to install node in our system from official docs(nodejs.org)
+
+node -v ==> to check that node is installed or Not
+
+
+inbuilt modules in node js are 
+
+fs,path,http,os etc 
+
+in node js they provide http methods like get,put(patch),post,delete
+
+node js had some limitations
+------------------------------
+Limitation	Details / Impact
+Single-threaded	CPU-intensive tasks block event loop
+Callback hell	Hard-to-maintain nested callbacks
+CPU-bound tasks	Not efficient for heavy computation
+Library support	Some niche libraries are limited
+Error handling	Async errors can crash server
+SQL-heavy apps	Complex joins may be slower
+API stability	Breaking changes in Node/npm
+Multi-core utilization
+
+they moved to from node to express 
+
+
+express js
+-----------
+node js framework for building web apps
+
+npm ==> node package manager 
+
+
+npm init will create a package.json in our folder 
+
+package.json ==> will contain all the details about our file 
+
+npm init -y ==> create a package .json automatically 
+
+if u want install any packe from npm registry 
+
+npm install packagename or npm i packagename
+
+how to create a basic express server
+
+const express = require('express');
+const app = express();
+
+const HOSTNAME = 'localhost',PORT=6500;
+
+
+app.listen(HOSTNAME,PORT,()=>{console.log(`Server stared at ${HOSTNAME}:${PORT}`)})
+
+middleware
+----------
+middleware is a function that has access to the request & response objects in node/express application 
+it sits b/w client request  & the final route handler
+it is the main purpose is to process requests modify data  or perform actions before pasing control to the next function 
+
+middleware function 
+---------------------
+function middleware(req,res,next)
+{
+    //do something
+    next()//pass control to the next middleware
+}
+
+req ==> http req object
+res ==> http res object
+next ==> a function to pass control to the next middleware or route handler
+
+types of middleware
+-------------------
+application level middleware
+router level middleware
+builtin middleware
+thirdparty middleware
+error handling middleware
+
+
+application level middleware
+---------------------------
+applied to entire app or  specific routes
+
+example
+--------
+const express = require('express');
+const app = express();
+
+app.use((req, res, next) => {
+    console.log(`${req.method} request to ${req.url}`);
+    next(); // Pass to next middleware or route
+});
+
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
+
+router level middleware
+-----------------------
+applied to a specific router
+
+const router = express.Router();
+
+router.use((req, res, next) => {
+    console.log('Router middleware triggered');
+    next();
+});
+
+router.get('/users', (req, res) => {
+    res.send('Users route');
+});
+
+app.use('/api', router);
+
+
+builtin middleware
+-------------------
+Express provides some middleware out of the box:
+ to accepth the data from front end in json format 
+
+app.use(express.json()); // Parse JSON body
+app.use(express.urlencoded({ extended: true })); // Parse form data
+
+
+Third-Party Middleware
+----------------------
+Examples: cors, helmet, morgan, body-parser.
+to send the data from frontend to backend(form-handling)
+const cors = require('cors');
+app.use(cors()); // Enables Cross-Origin Resource Sharing
+
+
+Error-Handling Middleware
+-----------------------------
+Special middleware for handling errors. Has 4 parameters: (err, req, res, next)
+
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
+
+
+routes
+------
+routes define how an application responds to client request(based on url & http method)
+each route specifies
+
+path/endpoint ==> /users ,/products/:id
+http methods ==> post,get,put,delete,patch 
+callback function handler ==> what should happen when that route is hit
+
+
+ What is MVC?
+ -----------
+It’s an architectural pattern to structure code in web applications.
+
+M (Model) → Data and Database logic (SQL/NoSQL queries, schema).
+
+V (View) → UI/Frontend (HTML, EJS, React, etc.).
+
+C (Controller) → Handles requests, processes data from Model, and sends response (View or JSON).

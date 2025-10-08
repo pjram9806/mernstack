@@ -41,7 +41,8 @@ Use Camel Case naming convention (starting letter of each word should be in the 
 
 For example, color, fontFamily, backgroundColor, etc.
 
-
+datatypes
+-----------
 
 
 
