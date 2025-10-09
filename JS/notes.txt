@@ -41,22 +41,82 @@ Use Camel Case naming convention (starting letter of each word should be in the 
 
 For example, color, fontFamily, backgroundColor, etc.
 
+
+primitive data types ==> undefined,string,boolean,number
+
+convert string into number ==> parseInt
+
+conditionals ==> if else statements
+
+
+
 datatypes
 -----------
+data types are of 2 types
+
+primitive types & reference types
+
+primitive types
+----------------
+number,boolean,string,undefined,etc
+
+typeof is used to find the data type of the value
+
+number ==> all the numbers are of number type
+
+example
+---------
+let x = 100,y=5.5;
+console.log(typeof(x),typeof(y))
 
 
+boolean ==> values are true or false
+
+ex
+--
+let isActive = true;
+console.log(typeof(isActive));
+console.log(typeof(true));
+
+string ==> string is a stream of characters string should be enclosed with single-quotes ==> 'hello',double-quotes==> "Hi",back-tick==>`ravi`
+
+ex
+--
+let name = 'anudeep';
+console.log(typeof(name));
+
+undefined ==> if a value is not assigned to the variable then it takes  undefined as its value
+
+in js undefined refers to value not being assigned
+
+let age;
+console.log(age);
+
+the parseInt() function accept a string  & convert into integer
+
+'0' ==> 0
 
 
+conditional statements
+-----------------------
+conditional statements allows  you to execute  a block of code  only when specified condition is true
 
 
+ex
+--
+if(condition A)
+{
+    block -1
+}
+else if(conditon B)
+{
+    block-2
 
-
-
-
-
-
-
-
+}
+else
+{
+    block -3
+}
 
 
 
