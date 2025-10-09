@@ -119,11 +119,20 @@ else
 }
 
 
+Math Functions ==> Math.ceil(),Math.random()
+
+input element ==> text input, password input
+
+comaprison operators ==> loose equals to(==) strict equal to(===)
 
 
+Math Functions
+--------------
+Math.randon() ==> will generate a random number
 
+Math.ceil() ==> math.ceil function always rounds a number up to the nxt largest ineteger 
 
-
+console.log(Math.ceil(47.14389181180687));
 
 
 
