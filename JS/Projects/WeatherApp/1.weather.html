@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="searchBar">
+      <div class="border border-1 border-white searchBarParentDiv">
+        <input type="text" class="inputfield" placeholder="Search City" />
+        <img src="../imgs/search.png" alt="" class="searchIcon" onclick="fetchData()"/>
+      </div>
+    </div>
+
+    <div class="mainContentParentDiv d-flex">
+      <div class="leftDiv">
+        <div class="currentDivTemp leftChild p-3 d-flex flex-column gap-2">
+          <h6 class="m-0" id="cityName">City Name</h6>
+          <h5 class="m-0" id="cityTemp">0 &deg;C</h5>
+          <h6 class="m-0" id="skyDesc">Sky Description</h6>
+          <hr class="line" />
+          <div class="d-flex gap-2">
+            <img src="../imgs/calender.jpg" alt="" width="25px" />
+            <h6 class="m-0">Date</h6>
+          </div>
+          <div class="d-flex gap-2">
+            <img src="../imgs/time.jpg" alt="" width="25px" />
+            <h6>Time</h6>
+          </div>
+        </div>
+
+        <div class="nextFiveDays leftChild p-3 d-flex flex-column gap-2">
+          <h6 class="m-0" id="comingFivedaysTitle">Coming 5 days</h6>
+          <div class="d-flex flex-column gap-1">
+            <div
+              class="forecastRow d-flex align-items-center justify-content-between"
+            >
+              <div class="d-flex gap-1 align-items-center">
+                <img src="../imgs/Cloud-2.jpg" alt="" width="35px" />
+                <h6 class="m-0">7 &deg;C</h6>
+              </div>
+              <h6 class="m-0">Saturday</h6>
+              <h6 class="m-0">10-10-2025</h6>
+            </div>
+            <div
+              class="forecastRow d-flex align-items-center justify-content-between"
+            >
+              <div class="d-flex gap-1 align-items-center">
+                <img src="../imgs/Cloud-2.jpg" alt="" width="35px" />
+                <h6 class="m-0">7 &deg;C</h6>
+              </div>
+              <h6 class="m-0">Saturday</h6>
+              <h6 class="m-0">10-10-2025</h6>
+            </div>
+            <div
+              class="forecastRow d-flex align-items-center justify-content-between"
+            >
+              <div class="d-flex gap-1 align-items-center">
+                <img src="../imgs/Cloud-2.jpg" alt="" width="35px" />
+                <h6 class="m-0">7 &deg;C</h6>
+              </div>
+              <h6 class="m-0">Saturday</h6>
+              <h6 class="m-0">10-10-2025</h6>
+            </div>
+            <div
+              class="forecastRow d-flex align-items-center justify-content-between"
+            >
+              <div class="d-flex gap-1 align-items-center">
+                <img src="../imgs/Cloud-2.jpg" alt="" width="35px" />
+                <h6 class="m-0">7 &deg;C</h6>
+              </div>
+              <h6 class="m-0">Saturday</h6>
+              <h6 class="m-0">10-10-2025</h6>
+            </div>
+            <div
+              class="forecastRow d-flex align-items-center justify-content-between"
+            >
+              <div class="d-flex gap-1 align-items-center">
+                <img src="../imgs/Cloud-2.jpg" alt="" width="35px" />
+                <h6 class="m-0">7 &deg;C</h6>
+              </div>
+              <h6 class="m-0">Saturday</h6>
+              <h6 class="m-0">10-10-2025</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rightDiv">
+        <div
+          class="rightRow rowOne d-flex gap-2 justify-content-between align-items-center"
+        >
+          <div class="extraMetric d-flex gap-2">
+            <img src="../imgs/wind.webp" alt="" width="35px" />
+            <div>
+              <h6 class="m-0">Metric Name</h6>
+              <h6 class="m-0">Metric Value</h6>
+            </div>
+          </div>
+          <div class="extraMetric d-flex gap-2">
+            <img src="../imgs/wind.webp" alt="" width="35px" />
+            <div>
+              <h6 class="m-0">Metric Name</h6>
+              <h6 class="m-0">Metric Value</h6>
+            </div>
+          </div>
+          <div class="extraMetric d-flex gap-2">
+            <img src="../imgs/wind.webp" alt="" width="35px" />
+            <div>
+              <h6 class="m-0">Metric Name</h6>
+              <h6 class="m-0">Metric Value</h6>
+            </div>
+          </div>
+          <div class="extraMetric d-flex gap-2">
+            <img src="../imgs/wind.webp" alt="" width="35px" />
+            <div>
+              <h6 class="m-0">Metric Name</h6>
+              <h6 class="m-0">Metric Value</h6>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="rightRow rowTwo d-flex justify-content-between align-items-center"
+        >
+          <div class="AQI rowTwoDiv p-3 d-flex flex-column gap-2">
+            <h5>Air Quality Index (AQI)</h5>
+
+            <div class="d-flex align-items-center">
+              <img src="../imgs/aqi.png" alt="" width="35px" />
+              <div class="text-center">
+                <h6 class="m-0">AQI Metric</h6>
+                <h6 class="m-0">0</h6>
+              </div>
+              <div class="text-center">
+                <h6 class="m-0">AQI Metric</h6>
+                <h6 class="m-0">0</h6>
+              </div>
+              <div class="text-center">
+                <h6 class="m-0">AQI Metric</h6>
+                <h6 class="m-0">0</h6>
+              </div>
+              <div class="text-center">
+                <h6 class="m-0">AQI Metric</h6>
+                <h6 class="m-0">0</h6>
+              </div>
+            </div>
+          </div>
+          <div class="sunRise rowTwoDiv p-3">
+            <h5>Sunrise & Sunset</h5>
+
+            <div class="d-flex justify-content-between">
+              <div class="sunRiseDiv d-flex align-items-center">
+                <img src="../imgs/sun.png" alt="" width="50px" />
+                <div class="d-flex flex-column gap-2">
+                  <h6>Sunrise</h6>
+                  <h6>6:00 Am</h6>
+                </div>
+              </div>
+
+              <div class="sunsetDiv d-flex align-items-center">
+                <img src="../imgs/moon.jpg" alt="" width="35px" />
+                <div class="d-flex flex-column gap-2">
+                  <h6 class="m-0">Sunset</h6>
+                  <h6 class="m-0">7:00Pm</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightRow rowThree d-flex flex-column gap-2">
+          <h5 class="m-0">Today</h5>
+          <div class="d-flex justify-content-between todayTempParentDiv">
+            <div class="todayTemp">
+              <h6>9:00AM</h6>
+              <img src="../imgs/cloudy.jfif" alt="" width="35px" />
+              <h5>15 &deg; C</h5>
+            </div>
+            <div class="todayTemp">
+              <h6>9:00AM</h6>
+              <img src="../imgs/cloudy.jfif" alt="" width="35px" />
+              <h5>15 &deg; C</h5>
+            </div>
+            <div class="todayTemp">
+              <h6>9:00AM</h6>
+              <img src="../imgs/cloudy.jfif" alt="" width="35px" />
+              <h5>15 &deg; C</h5>
+            </div>
+            <div class="todayTemp">
+              <h6>9:00AM</h6>
+              <img src="../imgs/cloudy.jfif" alt="" width="35px" />
+              <h5>15 &deg; C</h5>
+            </div>
+            <div class="todayTemp">
+              <h6>9:00AM</h6>
+              <img src="../imgs/cloudy.jfif" alt="" width="35px" />
+              <h5>15 &deg; C</h5>
+            </div>
+            <div class="todayTemp">
+              <h6>9:00AM</h6>
+              <img src="../imgs/cloudy.jfif" alt="" width="35px" />
+              <h5>15 &deg; C</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        async function fetchData()
+        {
+            let cityName = document.getElementsByClassName('inputfield')[0].value;
+            console.log('currentCity:',cityName);
+            let requestData= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=bd83e9329956c3d0f9c70e181db542d5&units=metric`);
+            let formatData = await requestData.json();
+            console.log('formatted data:', formatData);
+        }
+    </script>
+  </body>
+</html>

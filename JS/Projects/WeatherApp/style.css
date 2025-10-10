@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;                 /* remove default margin */
+  padding: 0;
+  height: 100vh;             /* make sure body takes full height */
+  background-image: url('../imgs/bg-4.jpg');
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;    /* stretch image to cover screen */
+}
+
+.inputfield{
+    outline: none;
+}
+
+
+.searchBar{
+    height: 10vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBarParentDiv
+{
+    width:50%;
+    height: fit-content;
+    position: relative;
+}
+.inputfield
+{
+    width: 100%;
+    border-radius: 25px;
+    padding:10px;
+}
+.searchIcon
+{
+    width: 35px;
+    position:absolute;
+    right: 0px;
+    top: 5px;
+}
+.searchIcon:hover{
+    cursor: pointer;
+}
+.mainContentParentDiv{
+    height: 90vh;
+}
+.leftDiv
+{
+    width: 30%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+.rightDiv{
+    width: 70%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftChild
+{
+    background: grey;
+    width: 85%;
+    height: 40vh;
+    margin: auto;
+    border-radius: 10px;
+}
+#cityName{
+    font-size: large;
+}
+#cityTemp{
+    font-size: large;
+}
+#comingFivedaysTitle{
+    font-size: x-large;
+}
+.rightRow{
+    height: 27vh;
+    width: 100%;
+}
+.extraMetric{
+    background: grey;
+    padding: 5% 2%;
+    width: fit-content;
+    border-radius: 15px;
+    align-items: center;
+}
+.rowTwoDiv{
+    background: grey;
+    backdrop-filter: blur(15px);
+    width: 45%;
+    height:85%;
+    border-radius: 15px;
+
+}
+.todayTemp{
+    background: grey;
+    width: fit-content;
+    padding:15px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+@media only screen and(max-width:776px)
+{
+    .rightDiv{
+        width: 100%;
+    }
+    .leftDiv{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+    .mainContentParentDiv{
+        height: 90vh;
+        flex-direction:column;
+    }
+    .searchBar{
+        width: 100%;
+    }
+    .searchBarParentDiv{
+    width:85%;
+    height: fit-content;
+    position: relative;
+}
+.rowOne{
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+.rowTwo{
+    flex-direction: column;
+    gap: 10px;
+    height: 30vh;
+}
+.rowTwoDiv{
+    background: grey;
+    backdrop-filter: blur(15px);
+    width: 85%;
+    height:85%;
+    border-radius: 15px;
+
+}
+
+.rowThree{
+    width: 85%;
+    margin: auto;
+}
+.todayTempParentDiv
+{
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    gap: 15px;
+
+}
+}
