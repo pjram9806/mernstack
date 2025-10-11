@@ -29,11 +29,11 @@
           <hr class="line" />
           <div class="d-flex gap-2">
             <img src="../imgs/calender.jpg" alt="" width="25px" />
-            <h6 class="m-0">Date</h6>
+            <h6 class="m-0" id="date">Date</h6>
           </div>
           <div class="d-flex gap-2">
             <img src="../imgs/time.jpg" alt="" width="25px" />
-            <h6>Time</h6>
+            <h6 class="m-0" id="time">Time</h6>
           </div>
         </div>
 
@@ -137,20 +137,20 @@
             <div class="d-flex align-items-center">
               <img src="../imgs/aqi.png" alt="" width="35px" />
               <div class="text-center">
-                <h6 class="m-0">AQI Metric</h6>
-                <h6 class="m-0">0</h6>
+                <h6 class="m-0" id="co">AQI Metric</h6>
+                <h6 class="m-0" id="coValue">0</h6>
               </div>
               <div class="text-center">
-                <h6 class="m-0">AQI Metric</h6>
-                <h6 class="m-0">0</h6>
+                <h6 class="m-0" id="so2">AQI Metric</h6>
+                <h6 class="m-0" id="so2Value">0</h6>
               </div>
               <div class="text-center">
-                <h6 class="m-0">AQI Metric</h6>
-                <h6 class="m-0">0</h6>
+                <h6 class="m-0" id="o3">AQI Metric</h6>
+                <h6 class="m-0" id="o3Value">0</h6>
               </div>
               <div class="text-center">
-                <h6 class="m-0">AQI Metric</h6>
-                <h6 class="m-0">0</h6>
+                <h6 class="m-0" id="no2">AQI Metric</h6>
+                <h6 class="m-0" id="no2Value">0</h6>
               </div>
             </div>
           </div>
@@ -161,8 +161,8 @@
               <div class="sunRiseDiv d-flex align-items-center">
                 <img src="../imgs/sun.png" alt="" width="50px" />
                 <div class="d-flex flex-column gap-2">
-                  <h6>Sunrise</h6>
-                  <h6>6:00 Am</h6>
+                  <h6 class="m-0">Sunrise</h6>
+                  <h6 class="m-0" id="sunriseTime">6:00 Am</h6>
                 </div>
               </div>
 
@@ -170,7 +170,7 @@
                 <img src="../imgs/moon.jpg" alt="" width="35px" />
                 <div class="d-flex flex-column gap-2">
                   <h6 class="m-0">Sunset</h6>
-                  <h6 class="m-0">7:00Pm</h6>
+                  <h6 class="m-0" id="sunsetTime">7:00Pm</h6>
                 </div>
               </div>
             </div>
@@ -238,6 +238,38 @@
     ></script>
 
     <script>
+
+      /* openapi https://api.openweathermap.org/data/2.5/weather?q=Hyderabad&appid=bd83e9329956c3d0f9c70e181db542d5&units=metric */
+      function dateFormat(timeStamp)
+      {
+        const date = new Date(timeStamp * 1000);
+        console.log(date.toUTCString());
+        console.log(date.toLocaleString());
+        return date.toLocaleString();
+      }
+
+      async function fetchAQIData(lat,lon)
+     {
+      let fetchAQIData = await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=bd83e9329956c3d0f9c70e181db542d5`);
+      let formatteddata = await fetchAQIData.json();
+      console.log('AQI Data:',formatteddata);
+      let list = formatteddata.list[0].components;
+      console.log("list",list);
+      
+      $("#no2")[0].innerText = 'NO2';
+      $("#no2Value")[0].innerText = list.no2;
+
+      $("#o3")[0].innerText = 'O3';
+      $("#o3Value")[0].innerText = list.o3;
+
+      $("#co")[0].innerText = 'CO';
+      $("#coValue")[0].innerText = list.co;
+
+      $("#so2")[0].innerText = 'SO2';
+      $("#so2Value")[0].innerText = list.so2;
+
+     }
+    
         async function fetchData()
         {
             let cityName = document.getElementsByClassName('inputfield')[0].value;
@@ -245,6 +277,41 @@
             let requestData= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=bd83e9329956c3d0f9c70e181db542d5&units=metric`);
             let formatData = await requestData.json();
             console.log('formatted data:', formatData);
+
+            let responseCityName = formatData.name;
+            let responseTemp = formatData.main.temp;
+            let skyDescription = formatData.weather[0].description;
+
+            $('#cityName')[0].innerText = responseCityName;
+            $('#cityTemp')[0].innerText = responseTemp;
+            $('#skyDesc')[0].innerText = skyDescription;
+
+            /* console.log('response in city name:',responseCityName);
+            console.log('response temp:',responseTemp);
+            console.log('sky description:',skyDescription); */
+
+            //updating date & time
+            let properDate = dateFormat(formatData.dt);
+            let date = properDate.split(',')[0];
+            let time = properDate.split(',')[1];
+            $('#date')[0].innerText = date;
+            $('#time')[0].innerText = time;
+           /*  console.log('proper date:',properDate);
+            console.log(date,time); */
+
+            /* updating sunrise & sunset */
+            let sunriseTimeStamp = formatData.sys.sunrise;
+            let sunsetTimeStamp = formatData.sys.sunset;
+            let properSunriseTime = dateFormat(sunriseTimeStamp).split(',')[1];
+            let properSunsetTime = dateFormat(sunsetTimeStamp).split(',')[1];
+            $('#sunriseTime')[0].innerText = properSunriseTime;
+            $('#sunsetTime')[0].innerText = properSunsetTime;
+            console.log('sunriseTime:',properSunriseTime,'sunsetTime:',properSunsetTime);
+            
+            /* Getting latitude & longitude data aqi */
+            let lat = formatData.coord.lat;
+            let lon = formatData.coord.lon;
+            fetchAQIData(lat,lon);
         }
     </script>
   </body>
