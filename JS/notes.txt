@@ -123,7 +123,7 @@ Math Functions ==> Math.ceil(),Math.random()
 
 input element ==> text input, password input
 
-comaprison operators ==> loose equals to(==) strict equal to(===)
+comaparison operators ==> loose equals to(==) strict equal to(===)
 
 
 Math Functions
@@ -133,6 +133,111 @@ Math.randon() ==> will generate a random number
 Math.ceil() ==> math.ceil function always rounds a number up to the nxt largest ineteger 
 
 console.log(Math.ceil(47.14389181180687));
+
+
+html input element
+-------------------
+creates a interactive controls to acceot the data from user
+
+different types of inputs 
+--------------------------
+text,password,radio buttons,checkbox,date
+
+text-input
+------------
+comaparison operators
+------------------
+diff b/w ==(loose equal) & strict equal(====)
+
+example
+-------
+console.log(2 == '2') ==> true will check value not the the data type
+console.log(2 === '2') ==> false will check for value & data type as well
+
+in python(2 =='2') ==> false 
+
+
+arrays ==> methods,operations
+
+functions ==> declartion & expressions
+
+dom maniulations ==> classList.remove()classList.add(),appendChild(),createElement()
+
+data structures allow us to store & organize  data efficiently
+
+this will allow us to easily access & perform operation on the data 
+
+in js we have  builtin ds like arrays,objects,maps,sets
+
+
+python ==> lis holds a ordered sequence of items
+array holds a ordered sequence of items
+
+arrays
+-------
+let myArray = [5,'six',2,8.2];
+console.log(myArray);
+
+to access any item in array 
+
+array will have index starts from (0-)
+
+console.log(myArray[0]);
+console.log(myArray[1]);
+console.log(myArray[2]);
+console.log(myArray[3]);
+
+
+array is mutable(changeable)
+
+//modifying an array item
+myArray[1] = 6;
+console.log(myArray);
+
+
+to find the length of an array
+----------------------------------
+python: len() is used to find the no of items in the list
+
+js:array.length is used to find the length of an array
+
+
+how to add/remove items in array
+---------------------------------
+push() ==> add a new item in the end of the array 
+ex:
+myArray.push('true');
+myArray.push('never');
+console.log(myArray);
+
+
+pop() ==> removes a item from the end of the array & returns that item
+//removing an item
+let lastItem = myArray.pop();
+console.log(myArray);
+console.log(lastItem);
+
+dom manipulations
+-----------------
+createElement() ==> is used to create teh ttag dynamically from js 
+classList.add()
+classList.remove()
+appendChild()
+
+
+function expressions
+----------------------
+let showMsg = function()
+{
+    console.log('Hello');
+}
+
+showMsg()
+
+
+
+
+
 
 
 

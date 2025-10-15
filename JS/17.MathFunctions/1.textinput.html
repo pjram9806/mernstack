@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text</title>
+</head>
+<body>
+ 
+
+    <p>Enter Your Name</p>
+    <input type="text" id="inputElement">
+    <p>Password</p>
+    <input type="password">
+
+    <button onclick="signIn()">SignIn</button>
+    <p id="signInText"></p>
+<script>
+
+let inputElement = document.getElementById('inputElement');
+let paragraphElement = document.getElementById('signInText');
+
+let signIn = ()=>
+{
+    let nameElement = inputElement.value;
+    let verifyText = `Hi ${nameElement}, Verifying Your Account Please Wait....`;
+    //console.log(verifyText);
+    paragraphElement.textContent = verifyText;
+
+}
+</script>
+
+</body>
+
+</html>
