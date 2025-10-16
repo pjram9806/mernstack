@@ -225,6 +225,16 @@ classList.remove()
 appendChild()
 
 
+
+
+createElement
+---------------
+let h3Element = document.createElement('h1');
+h3Element.textContent = 'Heading-3'
+h3Element.classList.add('className');
+h3Element.classList.remove('className');
+
+
 function expressions
 ----------------------
 let showMsg = function()
@@ -233,6 +243,155 @@ let showMsg = function()
 }
 
 showMsg()
+
+
+objects
+-------
+
+objects ==> creating an object
+
+object properties ==> dot notation ,bracket notation,object destructing,
+
+property value ==> function,array,object
+
+in js we have builtin ds like ==> arrays,sets,maps,objects
+
+an object is a set of collection of properties
+
+a property  is an association  between a name(key) & value
+
+example:a person has a name & age city,etc these are the properties of a person
+
+key|value
+--- |-----
+name| naveen
+age | 25
+city| Hyd
+
+we can add properties {} as key:value pair
+
+let person:{name:'gopi',age:25,city:'kakinada'}
+
+object naming convention
+-------------------------
+
+identifiers
+------------
+a valid identifier  should follow the below rules
+
+it can contain alphanumeric charcters & _ and $
+
+it cant start with a number
+
+ex:name,$name,_name,name24 
+
+not 12name,name 56
+
+to use invalid identifier as key  we have to specify  them in quotes
+
+accessing object properties
+----------------------------
+dot notation 
+bracket notation
+
+dot notation
+-------------
+let person = { name: "gopi", age: 25, city: "kakinada","1":"value1","my choice":"value2" };
+console.log(person);
+console.log(person.name);
+console.log(person.age);
+
+dot notation is used for only valid identifier 
+
+we will get the error
+
+bracket notation
+-----------------
+using bracket notation we can access invalid & valid identifier 
+console.log(person);
+console.log(person['city']);
+console.log(person['age']);
+console.log(person['my choice']);
+
+accessing non existing properties
+----------------------------------
+console.log(person.gender); ==> will gives undefined
+
+variable as key
+
+let key = 'name';
+console.log(person[key]); ==> gopi
+console.log(person.key); ==> undefined
+
+
+object destructuring
+--------------------
+to unpack props from object  we use object destructuring
+
+the variable name should match with the key of an object
+
+property value
+----------------
+the value of the object property  can be 
+
+function,array,object many more
+
+function as a value
+--------------------
+let person = { 
+name:"gopi", 
+age: 25, 
+city:"kakinada",
+run:function()
+{
+    console.log('start runnning...........')
+}
+};
+
+
+array as a value
+----------------
+let person = { 
+name:"gopi", 
+age: 25, 
+city:"kakinada",
+run:function()
+{
+    console.log('start runnning...........')
+},hobbies:['Playing Chess','Singing']
+};
+
+object as a value
+-------------------
+car:{name:'bmw',model:'320d',color:'white'}
+
+
+
+Methods
+---------
+a javascript method is a property containing  a function definition
+
+document.createElement();
+
+document ==> object
+createElement() ==> key,method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
