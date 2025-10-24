@@ -43,7 +43,7 @@ package.json ==> will contain all the details about our file
 
 npm init -y ==> create a package .json automatically 
 
-if u want install any packe from npm registry 
+if u want install any package from npm registry 
 
 npm install packagename or npm i packagename
 

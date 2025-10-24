@@ -377,12 +377,25 @@ document ==> object
 createElement() ==> key,method
 
 
+Todos application
+-----------------
+html input  element ==> checkbox
+html elements ==> label
+dom manipulations ==> htmlfor,setAttribute()
 
 
 
+<input type="checkbox" id="myCheckbox">
+<label for="myCheckbox">Graduated</label>
 
 
+setAttribute()
+----------------
+to set a value of an attribute for a specified  element we use  setAttribute() method
 
+if the attribute already exists the value of the attribute gets updated
+
+element.setAttribute(attribute,value)
 
 
 

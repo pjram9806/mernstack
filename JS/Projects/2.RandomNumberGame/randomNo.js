@@ -1,7 +1,7 @@
 let userInputElement = document.getElementById("userInput");
 let resultElement = document.getElementById("gameResult");
 let generateRandomNo = Math.ceil(Math.random() * 100);
-//console.log(generateRandomNo);
+console.log(generateRandomNo);
 
 let checkGuess = () => {
   let guessedNumber = parseInt(userInputElement.value);

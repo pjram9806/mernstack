@@ -1,3 +1,35 @@
+React Js
+---------
+React js is a javascript library used to build   user interfaces for websites & web apps
+
+it helps developers build interactive & fast web apps easily 
+
+react js is a component based  which means you build small  reusable pieces(called compoennts) & combine them to create a full app
+
+it was developed by fb 
+
+
+why React js
+------------
+easy to learn for anyone who knows js
+component based structure helps build large apps faster 
+faster performance  using virtualDom 
+huge commmunity support  & many job opportunities 
+used in many  popular apps like fb,wp, & insta
+
+what are components
+--------------------
+a component is like a small building  block of web page
+each component does 1 thing like  showing a button,header,card or a form 
+component s make code cleaner & easier ,reusable to manage 
+in react we write components using js+html like code(jsx)
+
+
+plain js & react js
+-------------------
+react js makes it easier & cleaner  to build  dynamic user interface compared to plian js(vanila)
+
+
 props & state 
 ----------------
 props ==> transfer data from 1 component to another component
