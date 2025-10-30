@@ -1,0 +1,193 @@
+﻿PAX DETAILS :
+ONE ADULT, ONE CHILD , ONE INFANT
+BOOKING DETAILS
+ROUND TRIP
+ 1ST TRIP -> 1 STOPS
+ 2ND TRIP  ->  O STOPS
+
+
+MEAL,SEAT,BAGGAGE ADDED FOR ADULT , CHILD IN BOTH TRIP
+
+
+ADD SSR REQ
+{
+"bookingId": "TGS108670068588",
+"paymentInfos": [
+{
+"amount": 21064
+}
+],
+"sI": [
+{
+"id": "116415",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "ZCHK"
+},
+"ssi": {
+"code": "1D"
+}
+},
+{
+"id": 2,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "ZCHK"
+},
+"ssi": {
+"code": "1C"
+}
+}
+]
+}
+},
+{
+"id": "116416",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "PTSW"
+},
+"ssi": {
+"code": "1B"
+}
+},
+{
+"id": 2,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "PTSW"
+},
+"ssi": {
+"code": "2B"
+}
+}
+]
+}
+},
+{
+"id": "116417",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "ZCHK"
+},
+"ssi": {
+"code": "1B"
+}
+},
+{
+"id": 2,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "ZCHK"
+},
+"ssi": {
+"code": "1C"
+}
+}
+]
+}
+}
+]
+}
+
+
+
+
+ADD SSR RESPONSE
+{
+"bookingId": "TGS108670068588",
+"amendmentIds": [
+"8690068595",
+"4480068596"
+],
+"status": {
+"success": true,
+"httpStatus": 200
+}
+}
+
+
+
+
+
+
+
+
+ADDING BAGGAGE FOR FIRST TRIP FOR CHILD ONLY
+{
+"bookingId": "TGS108670068588",
+"paymentInfos": [
+{
+"amount": 5354
+}
+],
+"sI": [
+{
+"id": "116415",
+"bI": {
+"tI": [
+{
+"id": 2,
+"sbi": {
+"code": "XBPB"
+}
+}
+]
+}
+},
+{
+"id": "116416",
+"bI": {
+"tI": [
+{
+"id": 2,
+"sbi": {
+"code": "XBPB"
+}
+}
+]
+}
+}
+]
+}
+
+
+
+
+
+
+ADD SSR RESPONSE
+{
+"bookingId": "TGS108670068588",
+"amendmentIds": [
+"5870068597"
+],
+"status": {
+"success": true,
+"httpStatus": 200
+}
+}

@@ -1,0 +1,380 @@
+PAX DETAILS :
+ONE ADULT, ONE CHILD , ONE INFANT
+BOOKING DETAILS
+ONEWAY
+
+
+
+
+
+
+FETCH SSR REQUEST
+
+{
+"bookingId":"TGS102610068586"
+}
+
+
+
+
+
+
+
+
+FETCH SSR RESPONSE
+
+
+{
+"tripInfos": [
+{
+"sI": [
+{
+"id": "116414",
+"fD": {
+"aI": {
+"code": "SG",
+"name": "SpiceJet",
+"isLcc": true
+},
+"fN": "8169",
+"eT": "737"
+},
+"duration": 135,
+"da": {
+"code": "DEL",
+"name": "Delhi intl airport",
+"cityCode": "DEL",
+"city": "Delhi",
+"country": "India",
+"countryCode": "IN",
+"terminal": "Terminal 3"
+},
+"aa": {
+"code": "BOM",
+"name": "Chhatrapati Shivaji",
+"cityCode": "BOM",
+"city": "Mumbai",
+"country": "India",
+"countryCode": "IN",
+"terminal": "Terminal 2"
+},
+"dt": "2023-07-27T20:00",
+"at": "2023-07-27T22:15",
+"bI": {
+"tI": [
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {
+"BAGGAGE": [
+{
+"code": "EB05",
+"amount": 2604.00,
+"desc": "5KG"
+},
+{
+"code": "EB10",
+"amount": 4854.00,
+"desc": "10KG"
+},
+{
+"code": "EB15",
+"amount": 7104.00,
+"desc": "15KG"
+},
+{
+"code": "EB20",
+"amount": 9354.00,
+"desc": "20KG"
+},
+{
+"code": "EB30",
+"amount": 13854.00,
+"desc": "30KG"
+}
+],
+"MEAL": [
+{
+"code": "VGSW",
+"amount": 739.00,
+"desc": "Veg Sandwich/Wrap/Sub"
+},
+{
+"code": "VGML",
+"amount": 354.00,
+"desc": "Veg Meal"
+},
+{
+"code": "VCC2",
+"amount": 654.00,
+"desc": "Vegetable in Red Thai Curry with Steamed Rice"
+},
+{
+"code": "NVSW",
+"amount": 788.00,
+"desc": "Non Veg Sandwich/Wrap/Sub"
+},
+{
+"code": "NVML",
+"amount": 629.00,
+"desc": "Non Veg Meal."
+},
+{
+"code": "NCC6",
+"amount": 654.00,
+"desc": "Chicken schezwan on bed of fried rice"
+},
+{
+"code": "NCC5",
+"amount": 654.00,
+"desc": "Tawa Fish masala on bed of Steamed rice with tadka masoordal"
+},
+{
+"code": "NCC4",
+"amount": 654.00,
+"desc": "Tandoori Chicken tangri with chicken haryali tikka & vegetable shami kebab"
+},
+{
+"code": "NCC2",
+"amount": 654.00,
+"desc": "Chicken in Red Thai Curry with Steamed Rice"
+},
+{
+"code": "NCC1",
+"amount": 654.00,
+"desc": "Grilled Chicken Breast with Mushroom Sauce, Yellow Rice, Saut Carrot & Beans Baton"
+},
+{
+"code": "LCVS",
+"amount": 886.00,
+"desc": "Low cal salad Vegetarian"
+},
+{
+"code": "LCNS",
+"amount": 886.00,
+"desc": "Low cal salad Non Vegetarian"
+},
+{
+"code": "JNSW",
+"amount": 749.00,
+"desc": "Jain Cold Sandwich (current Cucumber and Tomato sandwich)"
+},
+{
+"code": "JNML",
+"amount": 354.00,
+"desc": "Jain Hot Meal"
+},
+{
+"code": "GFVG",
+"amount": 354.00,
+"desc": "Vegetarian Gluten-free Hot Meal"
+},
+{
+"code": "GFNV",
+"amount": 354.00,
+"desc": "Non Vegetarian Gluten-free Hot Meal"
+},
+{
+"code": "GFCM",
+"amount": 354.00,
+"desc": "Vegetarian Gluten-free Cold Meal"
+},
+{
+"code": "FPML",
+"amount": 354.00,
+"desc": "Fruit Platter"
+},
+{
+"code": "DNVL",
+"amount": 354.00,
+"desc": "Non Vegetarian Diabetic Hot Meal"
+},
+{
+"code": "DBML",
+"amount": 354.00,
+"desc": "Vegetarian Diabetic Hot Meal"
+},
+{
+"code": "CHML",
+"amount": 354.00,
+"desc": "Kids meal"
+}
+]
+},
+"osi": {},
+"ti": "Mr",
+"pt": "ADULT",
+"fN": "ADULT",
+"lN": "USERTWO"
+},
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {
+"BAGGAGE": [
+{
+"code": "EB05",
+"amount": 2604.00,
+"desc": "5KG"
+},
+{
+"code": "EB10",
+"amount": 4854.00,
+"desc": "10KG"
+},
+{
+"code": "EB15",
+"amount": 7104.00,
+"desc": "15KG"
+},
+{
+"code": "EB20",
+"amount": 9354.00,
+"desc": "20KG"
+},
+{
+"code": "EB30",
+"amount": 13854.00,
+"desc": "30KG"
+}
+],
+"MEAL": [
+{
+"code": "VGSW",
+"amount": 739.00,
+"desc": "Veg Sandwich/Wrap/Sub"
+},
+{
+"code": "VGML",
+"amount": 354.00,
+"desc": "Veg Meal"
+},
+{
+"code": "VCC2",
+"amount": 654.00,
+"desc": "Vegetable in Red Thai Curry with Steamed Rice"
+},
+{
+"code": "NVSW",
+"amount": 788.00,
+"desc": "Non Veg Sandwich/Wrap/Sub"
+},
+{
+"code": "NVML",
+"amount": 629.00,
+"desc": "Non Veg Meal."
+},
+{
+"code": "NCC6",
+"amount": 654.00,
+"desc": "Chicken schezwan on bed of fried rice"
+},
+{
+"code": "NCC5",
+"amount": 654.00,
+"desc": "Tawa Fish masala on bed of Steamed rice with tadka masoordal"
+},
+{
+"code": "NCC4",
+"amount": 654.00,
+"desc": "Tandoori Chicken tangri with chicken haryali tikka & vegetable shami kebab"
+},
+{
+"code": "NCC2",
+"amount": 654.00,
+"desc": "Chicken in Red Thai Curry with Steamed Rice"
+},
+{
+"code": "NCC1",
+"amount": 654.00,
+"desc": "Grilled Chicken Breast with Mushroom Sauce, Yellow Rice, Saut Carrot & Beans Baton"
+},
+{
+"code": "LCVS",
+"amount": 886.00,
+"desc": "Low cal salad Vegetarian"
+},
+{
+"code": "LCNS",
+"amount": 886.00,
+"desc": "Low cal salad Non Vegetarian"
+},
+{
+"code": "JNSW",
+"amount": 749.00,
+"desc": "Jain Cold Sandwich (current Cucumber and Tomato sandwich)"
+},
+{
+"code": "JNML",
+"amount": 354.00,
+"desc": "Jain Hot Meal"
+},
+{
+"code": "GFVG",
+"amount": 354.00,
+"desc": "Vegetarian Gluten-free Hot Meal"
+},
+{
+"code": "GFNV",
+"amount": 354.00,
+"desc": "Non Vegetarian Gluten-free Hot Meal"
+},
+{
+"code": "GFCM",
+"amount": 354.00,
+"desc": "Vegetarian Gluten-free Cold Meal"
+},
+{
+"code": "FPML",
+"amount": 354.00,
+"desc": "Fruit Platter"
+},
+{
+"code": "DNVL",
+"amount": 354.00,
+"desc": "Non Vegetarian Diabetic Hot Meal"
+},
+{
+"code": "DBML",
+"amount": 354.00,
+"desc": "Vegetarian Diabetic Hot Meal"
+},
+{
+"code": "CHML",
+"amount": 354.00,
+"desc": "Kids meal"
+}
+]
+},
+"osi": {},
+"ti": "Ms",
+"pt": "CHILD",
+"fN": "CHILD",
+"lN": "USERTWO"
+},
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {},
+"ti": "Ms",
+"pt": "INFANT",
+"fN": "INFANT",
+"lN": "USERTWO",
+"dob": "2022-11-01"
+}
+]
+}
+}
+]
+}
+],
+"bookingId": "TGS102610068586",
+"status": {
+"success": true,
+"httpStatus": 200
+},
+"conditions": {
+"st": 840,
+"sct": "2023-06-21T18:48:21.225"
+}
+}

@@ -1,0 +1,141 @@
+﻿PAX DETAILS :
+ONE ADULT, ONE CHILD , ONE INFANT
+BOOKING DETAILS
+NO of Stops : 1
+ONEWAY
+
+
+ADDING BAGGAGE  FOR  SECOND PAX ONLY
+
+
+
+
+ADD SSR REQUEST
+{
+"bookingId": "TGS100460068582",
+"paymentInfos": [
+{
+"amount": 2604
+}
+],
+"sI": [
+{
+"id": "116412",
+"bI": {
+"tI": [
+{
+"id": 2,
+"sbi": {
+"code": "EB05"
+}
+}
+]
+}
+},
+{
+"id": "116413",
+"bI": {
+"tI": [
+{
+"id": 2,
+"sbi": {
+"code": "EB05"
+}
+}
+]
+}
+}
+]
+}
+
+
+
+
+
+
+
+
+ADD SSR RESPONSE 
+{
+"bookingId": "TGS100460068582",
+"amendmentIds": [
+"2450068583"
+],
+"status": {
+"success": true,
+"httpStatus": 200
+}
+}
+
+
+
+
+
+
+
+
+SEAT ,MEAL ,BAGGAGE ADDED FOR FIRST PAX IN BOTH SEGMENTS
+ADD SSR REQUEST
+{
+"bookingId": "TGS100460068582",
+"paymentInfos": [
+{
+"amount": 8486
+}
+],
+"sI": [
+{
+"id": "116412",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "EB10"
+},
+"smi": {
+"code": "VGSW"
+},
+"ssi": {
+"code": "1A"
+}
+}
+]
+}
+},
+{
+"id": "116413",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "EB10"
+},
+"smi": {
+"code": "LCVS"
+},
+"ssi": {
+"code": "8D"
+}
+}
+]
+}
+}
+]
+}
+
+
+
+
+ADD SSR RESPONSE
+{
+"bookingId": "TGS100460068582",
+"amendmentIds": [
+"8880068585"
+],
+"status": {
+"success": true,
+"httpStatus": 200
+}
+}

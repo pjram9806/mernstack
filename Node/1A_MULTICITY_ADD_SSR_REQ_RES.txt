@@ -1,0 +1,115 @@
+﻿PAX DETAILS :
+ONE ADULT
+BOOKING DETAILS
+Multicy
+
+
+{
+"bookingId": "TGS100740068602",
+"paymentInfos": [
+{
+"amount": 15178
+}
+],
+"sI": [
+{
+"id": "116421",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "EB05"
+},
+"smi": {
+"code": "VGSW"
+},
+"ssi": {
+"code": "1A"
+}
+}
+]
+}
+},
+{
+"id": "116422",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "ZCHK"
+},
+"ssi": {
+"code": "1B"
+}
+}
+]
+}
+},
+{
+"id": "116423",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "PTSW"
+},
+"ssi": {
+"code": "1B"
+}
+}
+]
+}
+},
+{
+"id": "116424",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "XBPE"
+},
+"smi": {
+"code": "ZCHK"
+},
+"ssi": {
+"code": "1B"
+}
+}
+]
+}
+}
+]
+}
+
+
+
+
+Response
+
+
+
+
+{
+
+
+"bookingId": "TGS100740068602",
+"amendmentIds": [
+"0950068615",
+"5430068616",
+"3140068617"
+],
+"status": {
+"success": true,
+"httpStatus": 200
+}
+}

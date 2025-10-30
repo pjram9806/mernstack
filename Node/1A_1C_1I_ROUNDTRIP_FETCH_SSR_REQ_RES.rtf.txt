@@ -1,0 +1,700 @@
+﻿PAX DETAILS :
+ONE ADULT, ONE CHILD , ONE INFANT
+BOOKING DETAILS
+ROUND TRIP
+ 1ST TRIP -> 1 STOPS
+ 2ND TRIP  ->  O STOPS
+
+
+
+
+FETCH SSR REQ
+{
+"bookingId":"TGS108670068588"
+}
+
+
+
+
+FETCH SSR RESPONSE
+{
+"tripInfos": [
+{
+"sI": [
+{
+"id": "116415",
+"fD": {
+"aI": {
+"code": "6E",
+"name": "IndiGo",
+"isLcc": true
+},
+"fN": "153",
+"eT": "321"
+},
+"duration": 85,
+"da": {
+"code": "DEL",
+"name": "Delhi intl airport",
+"cityCode": "DEL",
+"city": "Delhi",
+"country": "India",
+"countryCode": "IN",
+"terminal": "Terminal 1"
+},
+"aa": {
+"code": "AMD",
+"name": "Sardar Vallabh Bhai Patel Intl Arpt",
+"cityCode": "AMD",
+"city": "Ahmedabad",
+"country": "India",
+"countryCode": "IN",
+"terminal": "Terminal 1"
+},
+"dt": "2023-06-28T20:00",
+"at": "2023-06-28T21:25",
+"bI": {
+"tI": [
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {
+"BAGGAGE": [
+{
+"code": "XBPE",
+"amount": 1854.00,
+"desc": "3Kg"
+},
+{
+"code": "XBPA",
+"amount": 2854.00,
+"desc": "5Kg"
+},
+{
+"code": "XBPB",
+"amount": 5354.00,
+"desc": "10Kg"
+},
+{
+"code": "XBPC",
+"amount": 7854.00,
+"desc": "15Kg"
+},
+{
+"code": "XBPD",
+"amount": 15354.00,
+"desc": "30Kg"
+}
+],
+"MEAL": [
+{
+"code": "ZCHK",
+"amount": 679.00,
+"desc": "Nissin Zesty Chicken Keema Noodle"
+},
+{
+"code": "VBIR",
+"amount": 629.00,
+"desc": "VEG BIRYANI Combo"
+},
+{
+"code": "UPMA",
+"amount": 629.00,
+"desc": "RAVA UPMA Combo"
+},
+{
+"code": "PTSW",
+"amount": 754.00,
+"desc": "Paneer Tikka Sandwich Combo"
+},
+{
+"code": "NVTR",
+"amount": 854.00,
+"desc": "Non veg trio sandwich"
+},
+{
+"code": "NVML",
+"amount": 704.00,
+"desc": "Non Veg Meal"
+},
+{
+"code": "MUYO",
+"amount": 629.00,
+"desc": "Muesli with yogurt"
+},
+{
+"code": "DACH",
+"amount": 629.00,
+"desc": "DAL CHAWAL Combo"
+},
+{
+"code": "COMI",
+"amount": 629.00,
+"desc": "Cornflakes with Milk"
+},
+{
+"code": "CJSW",
+"amount": 779.00,
+"desc": "Chicken Junglee Sandwich Combo"
+}
+]
+},
+"osi": {},
+"ti": "Mr",
+"pt": "ADULT",
+"fN": "ADULT",
+"lN": "USERFOUR"
+},
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {
+"BAGGAGE": [
+{
+"code": "XBPE",
+"amount": 1854.00,
+"desc": "3Kg"
+},
+{
+"code": "XBPA",
+"amount": 2854.00,
+"desc": "5Kg"
+},
+{
+"code": "XBPB",
+"amount": 5354.00,
+"desc": "10Kg"
+},
+{
+"code": "XBPC",
+"amount": 7854.00,
+"desc": "15Kg"
+},
+{
+"code": "XBPD",
+"amount": 15354.00,
+"desc": "30Kg"
+}
+],
+"MEAL": [
+{
+"code": "ZCHK",
+"amount": 679.00,
+"desc": "Nissin Zesty Chicken Keema Noodle"
+},
+{
+"code": "VBIR",
+"amount": 629.00,
+"desc": "VEG BIRYANI Combo"
+},
+{
+"code": "UPMA",
+"amount": 629.00,
+"desc": "RAVA UPMA Combo"
+},
+{
+"code": "PTSW",
+"amount": 754.00,
+"desc": "Paneer Tikka Sandwich Combo"
+},
+{
+"code": "NVTR",
+"amount": 854.00,
+"desc": "Non veg trio sandwich"
+},
+{
+"code": "NVML",
+"amount": 704.00,
+"desc": "Non Veg Meal"
+},
+{
+"code": "MUYO",
+"amount": 629.00,
+"desc": "Muesli with yogurt"
+},
+{
+"code": "DACH",
+"amount": 629.00,
+"desc": "DAL CHAWAL Combo"
+},
+{
+"code": "COMI",
+"amount": 629.00,
+"desc": "Cornflakes with Milk"
+},
+{
+"code": "CJSW",
+"amount": 779.00,
+"desc": "Chicken Junglee Sandwich Combo"
+}
+]
+},
+"osi": {},
+"ti": "Ms",
+"pt": "CHILD",
+"fN": "CHILD",
+"lN": "TEST"
+},
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {},
+"ti": "Ms",
+"pt": "INFANT",
+"fN": "INFANT",
+"lN": "TEST",
+"dob": "2022-11-02"
+}
+]
+}
+},
+{
+"id": "116416",
+"fD": {
+"aI": {
+"code": "6E",
+"name": "IndiGo",
+"isLcc": true
+},
+"fN": "6794",
+"eT": "321"
+},
+"duration": 90,
+"da": {
+"code": "AMD",
+"name": "Sardar Vallabh Bhai Patel Intl Arpt",
+"cityCode": "AMD",
+"city": "Ahmedabad",
+"country": "India",
+"countryCode": "IN",
+"terminal": "Terminal 1"
+},
+"aa": {
+"code": "BOM",
+"name": "Chhatrapati Shivaji",
+"cityCode": "BOM",
+"city": "Mumbai",
+"country": "India",
+"countryCode": "IN",
+"terminal": "Terminal 2"
+},
+"dt": "2023-06-28T22:35",
+"at": "2023-06-29T00:05",
+"bI": {
+"tI": [
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {
+"BAGGAGE": [
+{
+"code": "XBPE",
+"amount": 0.00,
+"desc": "3Kg"
+},
+{
+"code": "XBPA",
+"amount": 0.00,
+"desc": "5Kg"
+},
+{
+"code": "XBPB",
+"amount": 0.00,
+"desc": "10Kg"
+},
+{
+"code": "XBPC",
+"amount": 0.00,
+"desc": "15Kg"
+},
+{
+"code": "XBPD",
+"amount": 0.00,
+"desc": "30Kg"
+}
+],
+"MEAL": [
+{
+"code": "PTSW",
+"amount": 754.00,
+"desc": "Paneer Tikka Sandwich Combo"
+},
+{
+"code": "NVML",
+"amount": 704.00,
+"desc": "Non Veg Meal"
+},
+{
+"code": "MUYO",
+"amount": 629.00,
+"desc": "Muesli with yogurt"
+},
+{
+"code": "COMI",
+"amount": 629.00,
+"desc": "Cornflakes with Milk"
+},
+{
+"code": "CJSW",
+"amount": 779.00,
+"desc": "Chicken Junglee Sandwich Combo"
+}
+]
+},
+"ti": "Mr",
+"pt": "ADULT",
+"fN": "ADULT",
+"lN": "USERFOUR"
+},
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {
+"BAGGAGE": [
+{
+"code": "XBPE",
+"amount": 0.00,
+"desc": "3Kg"
+},
+{
+"code": "XBPA",
+"amount": 0.00,
+"desc": "5Kg"
+},
+{
+"code": "XBPB",
+"amount": 0.00,
+"desc": "10Kg"
+},
+{
+"code": "XBPC",
+"amount": 0.00,
+"desc": "15Kg"
+},
+{
+"code": "XBPD",
+"amount": 0.00,
+"desc": "30Kg"
+}
+],
+"MEAL": [
+{
+"code": "PTSW",
+"amount": 754.00,
+"desc": "Paneer Tikka Sandwich Combo"
+},
+{
+"code": "NVML",
+"amount": 704.00,
+"desc": "Non Veg Meal"
+},
+{
+"code": "MUYO",
+"amount": 629.00,
+"desc": "Muesli with yogurt"
+},
+{
+"code": "COMI",
+"amount": 629.00,
+"desc": "Cornflakes with Milk"
+},
+{
+"code": "CJSW",
+"amount": 779.00,
+"desc": "Chicken Junglee Sandwich Combo"
+}
+]
+},
+"ti": "Ms",
+"pt": "CHILD",
+"fN": "CHILD",
+"lN": "TEST"
+},
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {},
+"ti": "Ms",
+"pt": "INFANT",
+"fN": "INFANT",
+"lN": "TEST",
+"dob": "2022-11-02"
+}
+]
+}
+}
+]
+},
+{
+"sI": [
+{
+"id": "116417",
+"fD": {
+"aI": {
+"code": "6E",
+"name": "IndiGo",
+"isLcc": true
+},
+"fN": "2103",
+"eT": "321"
+},
+"duration": 130,
+"da": {
+"code": "BOM",
+"name": "Chhatrapati Shivaji",
+"cityCode": "BOM",
+"city": "Mumbai",
+"country": "India",
+"countryCode": "IN",
+"terminal": "Terminal 2"
+},
+"aa": {
+"code": "DEL",
+"name": "Delhi intl airport",
+"cityCode": "DEL",
+"city": "Delhi",
+"country": "India",
+"countryCode": "IN",
+"terminal": "Terminal 2"
+},
+"dt": "2023-06-30T17:15",
+"at": "2023-06-30T19:25",
+"bI": {
+"tI": [
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {
+"BAGGAGE": [
+{
+"code": "XBPE",
+"amount": 1854.00,
+"desc": "3Kg"
+},
+{
+"code": "XBPA",
+"amount": 2854.00,
+"desc": "5Kg"
+},
+{
+"code": "XBPB",
+"amount": 5354.00,
+"desc": "10Kg"
+},
+{
+"code": "XBPC",
+"amount": 7854.00,
+"desc": "15Kg"
+},
+{
+"code": "XBPD",
+"amount": 15354.00,
+"desc": "30Kg"
+}
+],
+"MEAL": [
+{
+"code": "ZCHK",
+"amount": 679.00,
+"desc": "Nissin Zesty Chicken Keema Noodle"
+},
+{
+"code": "VGTR",
+"amount": 854.00,
+"desc": "Veg Trio Sandwich"
+},
+{
+"code": "VBIR",
+"amount": 629.00,
+"desc": "VEG BIRYANI Combo"
+},
+{
+"code": "UPMA",
+"amount": 629.00,
+"desc": "RAVA UPMA Combo"
+},
+{
+"code": "TCSW",
+"amount": 754.00,
+"desc": "Tomato Cucumber Cheese Lettuce Sandwich Combo"
+},
+{
+"code": "PTSW",
+"amount": 754.00,
+"desc": "Paneer Tikka Sandwich Combo"
+},
+{
+"code": "POHA",
+"amount": 579.00,
+"desc": "POHA Combo"
+},
+{
+"code": "NVTR",
+"amount": 854.00,
+"desc": "Non veg trio sandwich"
+},
+{
+"code": "NVML",
+"amount": 704.00,
+"desc": "Non Veg Meal"
+},
+{
+"code": "MUYO",
+"amount": 629.00,
+"desc": "Muesli with yogurt"
+},
+{
+"code": "DACH",
+"amount": 629.00,
+"desc": "DAL CHAWAL Combo"
+},
+{
+"code": "COMI",
+"amount": 629.00,
+"desc": "Cornflakes with Milk"
+},
+{
+"code": "CJSW",
+"amount": 779.00,
+"desc": "Chicken Junglee Sandwich Combo"
+}
+]
+},
+"osi": {},
+"ti": "Mr",
+"pt": "ADULT",
+"fN": "ADULT",
+"lN": "USERFOUR"
+},
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {
+"BAGGAGE": [
+{
+"code": "XBPE",
+"amount": 1854.00,
+"desc": "3Kg"
+},
+{
+"code": "XBPA",
+"amount": 2854.00,
+"desc": "5Kg"
+},
+{
+"code": "XBPB",
+"amount": 5354.00,
+"desc": "10Kg"
+},
+{
+"code": "XBPC",
+"amount": 7854.00,
+"desc": "15Kg"
+},
+{
+"code": "XBPD",
+"amount": 15354.00,
+"desc": "30Kg"
+}
+],
+"MEAL": [
+{
+"code": "ZCHK",
+"amount": 679.00,
+"desc": "Nissin Zesty Chicken Keema Noodle"
+},
+{
+"code": "VGTR",
+"amount": 854.00,
+"desc": "Veg Trio Sandwich"
+},
+{
+"code": "VBIR",
+"amount": 629.00,
+"desc": "VEG BIRYANI Combo"
+},
+{
+"code": "UPMA",
+"amount": 629.00,
+"desc": "RAVA UPMA Combo"
+},
+{
+"code": "TCSW",
+"amount": 754.00,
+"desc": "Tomato Cucumber Cheese Lettuce Sandwich Combo"
+},
+{
+"code": "PTSW",
+"amount": 754.00,
+"desc": "Paneer Tikka Sandwich Combo"
+},
+{
+"code": "POHA",
+"amount": 579.00,
+"desc": "POHA Combo"
+},
+{
+"code": "NVTR",
+"amount": 854.00,
+"desc": "Non veg trio sandwich"
+},
+{
+"code": "NVML",
+"amount": 704.00,
+"desc": "Non Veg Meal"
+},
+{
+"code": "MUYO",
+"amount": 629.00,
+"desc": "Muesli with yogurt"
+},
+{
+"code": "DACH",
+"amount": 629.00,
+"desc": "DAL CHAWAL Combo"
+},
+{
+"code": "COMI",
+"amount": 629.00,
+"desc": "Cornflakes with Milk"
+},
+{
+"code": "CJSW",
+"amount": 779.00,
+"desc": "Chicken Junglee Sandwich Combo"
+}
+]
+},
+"osi": {},
+"ti": "Ms",
+"pt": "CHILD",
+"fN": "CHILD",
+"lN": "TEST"
+},
+{
+"ssrBaggageInfos": [],
+"ssrMealInfos": [],
+"ssrInfo": {},
+"ti": "Ms",
+"pt": "INFANT",
+"fN": "INFANT",
+"lN": "TEST",
+"dob": "2022-11-02"
+}
+]
+}
+}
+]
+}
+],
+Z
+"bookingId": "TGS108670068588",
+"status": {
+"success": true,
+"httpStatus": 200
+},
+"conditions": {
+"st": 1200,
+"sct": "2023-06-21T19:04:02.107"
+}
+}

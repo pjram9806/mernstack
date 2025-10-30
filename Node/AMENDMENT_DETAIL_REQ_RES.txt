@@ -1,0 +1,186 @@
+﻿SEAT ,MEAL ,BAGGAGE ADDED FOR FIRST PAX IN BOTH SEGMENTS
+
+
+
+
+PAX DETAILS :
+ONE ADULT, ONE CHILD , ONE INFANT
+BOOKING DETAILS
+NO of Stops : 1
+ONEWAY
+
+
+
+
+Amendment detail request
+{
+"amendmentId": "8880068585"
+}
+
+
+Amendment detail response
+{
+"bookingId": "TGS100460068582",
+"amendmentId": "8880068585",
+"amendmentStatus": "SUCCESS",
+"totalAmount": 8486.00,
+"SSRAmendmentDetails": [
+{
+"sI": "116412",
+"tI": [
+{
+"ssrBaggageInfos": [
+{
+"code": "EB10",
+"ctds": 0.00
+}
+],
+"ssrMealInfos": [
+{
+"code": "VGSW",
+"ctds": 0.00
+}
+],
+"ssrSeatInfos": [
+{
+"code": "1A",
+"ctds": 0.00
+}
+],
+"fN": "ADULT",
+"lN": "USERONE"
+}
+]
+},
+{
+"sI": "116413",
+"tI": [
+{
+"ssrBaggageInfos": [
+{
+"code": "EB10",
+"ctds": 0.00
+}
+],
+"ssrMealInfos": [
+{
+"code": "LCVS",
+"ctds": 0.00
+}
+],
+"ssrSeatInfos": [
+{
+"code": "8D",
+"ctds": 0.00
+}
+],
+"fN": "ADULT",
+"lN": "USERONE"
+}
+]
+}
+],
+"status": {
+"success": true,
+"httpStatus": 200
+},
+"metaInfo": {}
+}
+
+
+
+
+
+
+PAX DETAILS :
+ONE ADULT, ONE CHILD , ONE INFANT
+BOOKING DETAILS
+ONEWAY
+SEAT,MEAL AND BAGGAGE ADDED FOR ADULT,CHILD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Amendment detail request
+{
+"amendmentId": "1440068587"
+}
+
+
+
+
+Amendment detail response
+
+
+{
+"bookingId": "TGS102610068586",
+"amendmentId": "1440068587",
+"amendmentStatus": "SUCCESS",
+"totalAmount": 13892.00,
+"SSRAmendmentDetails": [
+{
+"sI": "116414",
+"tI": [
+{
+"ssrBaggageInfos": [
+{
+"code": "EB10",
+"ctds": 0.00
+}
+],
+"ssrMealInfos": [
+{
+"code": "VGSW",
+"ctds": 0.00
+}
+],
+"ssrSeatInfos": [
+{
+"code": "1C",
+"ctds": 0.00
+}
+],
+"fN": "ADULT",
+"lN": "USERTWO"
+},
+{
+"ssrBaggageInfos": [
+{
+"code": "EB10",
+"ctds": 0.00
+}
+],
+"ssrMealInfos": [
+{
+"code": "VGSW",
+"ctds": 0.00
+}
+],
+"ssrSeatInfos": [
+{
+"code": "1D",
+"ctds": 0.00
+}
+],
+"fN": "CHILD",
+"lN": "USERTWO"
+}
+]
+}
+],
+"status": {
+"success": true,
+"httpStatus": 200
+},
+"metaInfo": {}
+}

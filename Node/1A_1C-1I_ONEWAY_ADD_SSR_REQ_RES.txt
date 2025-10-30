@@ -1,0 +1,77 @@
+PAX DETAILS :
+ONE ADULT, ONE CHILD , ONE INFANT
+BOOKING DETAILS
+ONEWAY
+
+
+
+
+
+
+SEAT,MEAL AND BAGGAGE ADDED FOR ADULT,CHILD
+
+
+
+ADD SSR REQUEST
+{
+"bookingId": "TGS102610068586",
+"paymentInfos": [
+{
+"amount": 13892
+}
+],
+"sI": [
+{
+"id": "116414",
+"bI": {
+"tI": [
+{
+"id": 1,
+"sbi": {
+"code": "EB10"
+},
+"smi": {
+"code": "VGSW"
+},
+"ssi": {
+"code": "1C"
+}
+},
+{
+"id": 2,
+"sbi": {
+"code": "EB10"
+},
+"smi": {
+"code": "VGSW"
+},
+"ssi": {
+"code": "1D"
+}
+}
+]
+}
+}
+]
+}
+
+
+
+
+
+
+
+
+ADD SSR RESPONSE
+
+
+{
+"bookingId": "TGS102610068586",
+"amendmentIds": [
+"1440068587"
+],
+"status": {
+"success": true,
+"httpStatus": 200
+}
+}
