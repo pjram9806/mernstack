@@ -1,8 +1,5 @@
-/* calculate the array of scores */
-
-let scores = [60,30,20];
-
-let calculateTotalScore = (scores)=>
+let my_list = [10,20,30,40];
+for(each_item of my_list)
 {
-
+    console.log(each_item)
 }

@@ -397,6 +397,38 @@ if the attribute already exists the value of the attribute gets updated
 
 element.setAttribute(attribute,value)
 
+Loops ==> for of loop,for in loop,forloop,whileloop
+
+todo application ==> building multiple todos dynamically
+
+javasacript ==> objects,variables,arrays,etc
+
+dom ==> createElement(),textContent etc
+
+
+Loops
+------
+loop as allow us to execute a block of code several times for of loop,for in loop,forloop,whileloop
+
+to iterate on sequence we use for of loop
+
+for(let eachItem of iterable)
+
+example
+--------
+python ==> 
+my_list = [10,20,30]
+for each_item in my_list:
+    print(each_item)
+
+javascript
+-----------
+let my_list = [10,20,30,40];
+for(each_item of my_list)
+{
+    console.log(each_item)
+}
+  
 
 
 
