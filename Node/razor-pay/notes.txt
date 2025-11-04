@@ -1,0 +1,27 @@
+{
+  "id": "pay_PuYdK3G7b1XH8A",
+  "entity": "payment",
+  "amount": 50000,
+  "currency": "INR",
+  "status": "captured",
+  "order_id": "order_RbF4qPuUQfd6LV",
+  "invoice_id": null,
+  "international": false,
+  "method": "upi",
+  "amount_refunded": 0,
+  "refund_status": null,
+  "captured": true,
+  "description": "Test payment",
+  "bank": null,
+  "wallet": null,
+  "vpa": "user@okicici",
+  "email": "user@example.com",
+  "contact": "9876543210",
+  "error_code": null,
+  "error_description": null,
+  "acquirer_data": {
+    "upi_transaction_id": "312654890123",
+    "rrn": "3232323232"
+  },
+  "created_at": 1762174212
+}
