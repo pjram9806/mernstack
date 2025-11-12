@@ -1,0 +1,62 @@
+props & state 
+----------------
+props ==> transfer data from 1 component to another component
+
+props is passed in the form of  attribute
+
+ex:<img src = 'abc'>
+
+state
+-------
+the data itself maintained by the component
+the component will maintain the data with itself
+
+component
+----------
+a piece of ui 
+
+react js expression ==> {}
+
+angular & vues j ==> {{}}
+
+concepts in reactjs
+----------------------
+state|props|propsTypes|props-drilling(parent-child,child-parent)|contextApi
+conditional rendering ?
+control rendering map method
+
+lifecycle methods
+--------------------
+componentDidMount() ==> rendered on DOM
+componentWillUpdate() ==> updation & sync with the server
+componentDidWIllUnMount()  ==> removes the com from dom 
+
+these are the predefined methods given by react used in class based components
+
+in functional components
+lifecycle method is useEffect() ==will perform side effects in our component
+
+useEffect(()=>{
+componentDidMount()
+return ()=>{
+componentWillUnMount
+
+}
+},[componentwillUpdate])
+
+connecting
+
+events-functions
+-----------------
+onclick = {functionName}
+
+axios library http library
+---------------------------
+u can interact with server(backend) 
+
+https://chatgpt.com/s/t_6874886b2c1c81918ba11c2a6a5d8a1f
+
+
+React Routing & Navigation
+---------------------------
+react-router-dom
