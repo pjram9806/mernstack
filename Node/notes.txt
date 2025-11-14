@@ -1,0 +1,174 @@
+Nodejs
+------
+Node.js is a runtime environment that allows you to run JavaScript outside the browser (on the server, desktop, or even IoT devices).
+
+It is built on Google Chrome’s V8 JavaScript engine, which makes it fast and efficient.
+
+inbuilt modules
+----------------
+fs,path,os,http
+
+3rd party modules
+------------------
+bcrypt,jwt
+
+
+bcrypt
+------
+this is used for hashing the password(password)
+while register bcrypt.hash 
+while bcrypt.compare
+
+syntax
+------
+const password = 'mypass123';
+
+//hashing pwd
+const hashedPwd = await bcrypt.hash(password,10);
+console.log('originalpwd:',password,'hashedpwd:',hashedPwd);
+    
+const isMatch = await bcrypt.compare(password,hashedPwd);
+console.log(isMatch);
+
+jwt
+-----
+json web tokens 
+
+Used for authentication (after login, server issues a token to client).
+Token contains payload (like user id, role) and is signed with a secret key.
+Client stores token (usually in localStorage or cookie) and sends it in Authorization header for protected routes.
+
+for every successfull login a token will be generated based on their 
+
+
+
+
+
+User logs in successfully.
+
+Server generates a token (signed with a secret key).
+
+Token is sent back to client → client stores it (usually in localStorage or cookies).
+
+For every request to protected routes, the client sends the token in the Authorization header (Bearer <token>).
+
+Server verifies the token before granting access.
+
+Important methods:
+
+jwt.sign(payload, secretKey, { expiresIn: "1h" }) → generate token.
+
+payload: usually user ID, email, or role (never password).
+
+jwt.verify(token, secretKey) → verify token validity and decode payload.
+
+
+
+🔹 Cookies
+
+Definition: Small pieces of data stored in the browser (client-side).
+
+Who stores it? The browser stores it, but the server can set it via response headers.
+
+Size limit: ~4KB per cookie.
+
+Lifetime: Can be temporary (session cookie) or persistent (with expiry date).
+
+Use case:
+
+Storing JWT token.
+
+Saving user preferences (dark mode, language, etc.).
+
+Security: Can be made safer with flags:
+
+HttpOnly → not accessible via JavaScript.
+
+Secure → only sent over HTTPS.
+
+SameSite → controls cross-site requests.
+
+🔹 Session
+
+Definition: A way to store data on the server-side that is linked to a user.
+
+How it works:
+
+When a user logs in, the server creates a session (object stored in memory or database).
+
+Server generates a Session ID.
+
+Session ID is sent to the client in a cookie.
+
+On the next request, client sends Session ID cookie → server looks up session → identifies the user.
+
+Size limit: Not limited to 4KB (can store more since data is on the server).
+
+Lifetime: Exists until it expires or user logs out.
+
+Use case:
+
+Traditional authentication (before JWT became popular).
+
+Shopping carts, temporary user data.
+
+🔹 Key Differences
+Feature	Cookies (Client-side)	Sessions (Server-side)
+Where stored?	Browser (client)	Server (memory/DB)
+Data	Small pieces of info (string)	Any user-related data (objects)
+Security	Exposed if not HttpOnly	Safer (data never leaves server)
+Size limit	~4KB	Large (depends on server)
+Speed	Faster (no lookup)	Slower (server must query data)
+Use	Tokens, preferences	Authentication, user session
+🔹 In Modern Apps
+
+With JWT:
+
+We often use stateless authentication → token stored in cookies or localStorage.
+
+No need for server-side session storage.
+
+With Sessions:
+
+Server must remember each logged-in user → good for smaller apps, but not scalable as much as JWT.
+
+👉 Simple way to remember:
+
+Cookie = Storage on client (like a sticky note in the browser).
+
+Session = Storage on server (linked with a Session ID in a cookie).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+smtp server 
+-----------
+smtp server is used to send otps to email by using nodemailer module with smtp.gmail.com & port no of gmail
+smtp.gmail.com port 587||465
+smtp.outlook.com 
+
+to send otps via email there is a module called nodemailer module
+npm i nodemailer
+
+
+
+
