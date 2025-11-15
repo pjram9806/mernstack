@@ -17,7 +17,7 @@ bcrypt
 ------
 this is used for hashing the password(password)
 while register bcrypt.hash 
-while bcrypt.compare
+while login bcrypt.compare
 
 syntax
 ------
@@ -39,8 +39,6 @@ Token contains payload (like user id, role) and is signed with a secret key.
 Client stores token (usually in localStorage or cookie) and sends it in Authorization header for protected routes.
 
 for every successfull login a token will be generated based on their 
-
-
 
 
 
