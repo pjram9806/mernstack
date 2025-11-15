@@ -1,0 +1,58 @@
+tags 
+-----
+In HTML there are tags syntax is same for every tag
+
+in browser html page no space is considered only single space 
+syntax 
+-------
+start_tag content ending_tag
+
+headings h1,h2,h3,h4,h5,h6 this will help you to display headings in webpage 
+
+paragraph p : this will display any type of paragraphs in web page & it will start in a new line give some spaces at ending tag & starting tag 
+
+self closing or void tags break br tag this tag will help you to break a sentence & start in a new line
+
+pre tag will display the text as you like new line  
+
+&nbsp; is used for spacing
+
+
+links
+-----
+anchor tag is used to link the the pages switch b/n multiple pages 
+syntax:<a href='filename.html'></a>
+
+href=value 
+href attribute
+value is either file or image
+
+images
+-----
+to display image tag we use img tag img tag is also self closing or void tag
+ <img src="abc.png">
+
+Lists
+-------
+there are 2 type of lists in html 
+order lists: the data dispaly in number/alphanumeric or caps& small letters format
+unorder lists  : the data display like bullet points
+data description list 
+
+<ol>
+
+<li></li>
+
+</ol>
+
+<ul>
+
+<li></li>
+
+</ul>
+
+the list is also used in navbar also 
+
+horizontal line it is self closing tag tag <hr/>
+
+Quotation tag:<q></q>
