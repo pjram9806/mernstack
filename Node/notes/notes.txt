@@ -167,3 +167,65 @@ M (Model) → Data and Database logic (SQL/NoSQL queries, schema).
 V (View) → UI/Frontend (HTML, EJS, React, etc.).
 
 C (Controller) → Handles requests, processes data from Model, and sends response (View or JSON).
+
+
+
+body,params,query,headers,files
+--------------------------------
+
+body
+-----
+req.body==> data sent in req.body via post/put/patch
+
+Creating data → POST,Updating data → PUT / PATCH,Logging in,Registering,Sending JSON objects
+where we use :user registration,login,form-submission,store or update-data
+
+ex:app.post('/users', (req, res) => {
+    console.log(req.body); 
+});
+
+
+
+params
+-------
+use req.params when the value is a part of url itself
+
+Get user by ID,Delete user by ID,Update user by ID
+
+ex:app.get('/users/:id', (req, res) => {
+    console.log(req.params.id); 
+});
+
+
+query
+------
+Used for data sent after ? in the URL.
+Searching,Filtering,Pagination,Sorting
+
+ex:GET /users?page=2&limit=10
+
+app.get('/users', (req, res) => {
+    console.log(req.query.page);
+});
+
+headers
+--------
+ req.headers — Useful for tokens / auth data
+Common for authentication data like JWT tokens.
+Ex
+const token = req.headers['authorization'];
+
+Checking JWT token,API key,Custom headers,Device info
+
+files
+-------
+req.files — Upload files (using multer)
+
+Used when uploading:
+
+Images,PDFs,Excel files
+
+Example:
+app.post('/upload', upload.single('photo'), (req, res) => {
+    console.log(req.file);
+});
