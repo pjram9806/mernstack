@@ -64,3 +64,16 @@ table contain rows & columns
 Forms
 -----
 form will be used in almost all the websites
+
+Meta tags
+----------
+used for seo kind of search operations 
+mostly we use google facebook,twitter tags
+
+keywords,description
+meta will not be displayed in browser
+
+div tag is used to break the elements in seperate part
+div tag will take 100% width
+
+
