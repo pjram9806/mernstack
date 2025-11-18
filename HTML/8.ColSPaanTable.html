@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Col Span</title>
+    <style>
+        table,tr,th,td
+    {
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <h3>Col Span</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>UserId</th>
+                <th>Name</th>
+                <th colspan="2">Contact Details</th>
+                <th>Signup Date</th>
+                <th>Is Course Purchased</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>8688487504</td>
+                <td>2025-11-12</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>8688487504</td>
+                <td>2025-11-12</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>8688487504</td>
+                <td>2025-11-12</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Row Span</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>UserId</th>
+                <th>Name</th>
+                <th colspan="2">Contact Details</th>
+                <th>Signup Date</th>
+                <th>Is Course Purchased</th>
+            </tr>
+        </thead>
+                <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>8688487504</td>
+                <td>2025-11-12</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Santhosh</td>
+                <td>Santhosh@gmail.com</td>
+                <td>8688487504</td>
+                <td>2025-11-12</td>
+                <td rowspan="2">Yes</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Naveen</td>
+                <td>Naveen@gmail.com</td>
+                <td>8688487504</td>
+                <td>2025-11-12</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

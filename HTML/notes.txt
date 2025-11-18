@@ -56,3 +56,11 @@ the list is also used in navbar also
 horizontal line it is self closing tag tag <hr/>
 
 Quotation tag:<q></q>
+
+Tables
+------
+table contain rows & columns
+
+Forms
+-----
+form will be used in almost all the websites
