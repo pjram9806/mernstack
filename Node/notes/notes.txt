@@ -229,3 +229,349 @@ Example:
 app.post('/upload', upload.single('photo'), (req, res) => {
     console.log(req.file);
 });
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🔁 Summary Table
+Node.	                    Express.
+JavaScript runtime	        Framework for Node.
+Handles core modules	    Adds structure & routing
+Can build servers manually	Provides app.get(), app.post(), etc.
+Fast, non-blocking	        Simplifies web development
+Uses require()	            Also uses require() or import
+
+
+
+
+req params
+----------
+in url we have 
+
+https://www.flipkart.com/watches/type=digital& rating = 5;
+
+https: protocol()
+www.flipkart.com :domain
+watches:paramaters
+type=digital& rating = 5:query parameters
+
+
+client-server(request)
+----------------------
+http request
+http response
+
+
+http request ==> start line headers,body
+start line==> url,http_version,http_method
+headers ==> request_headers,general_headers,representation_headers
+body==> additional info will be sent in body
+
+
+http response ==> status line,headers,body
+
+status ==> status code & statusText
+headers ==> request_headers,general_headers,representation_headers
+body ==> additional info will be sent in body
+
+
+req properties
+--------------
+/* req properties  */
+/* to get the id  */
+
+const express = require('express');
+const app = express();
+
+
+
+app.get('/users/:id',(req,res)=>
+{
+    console.log(req.params.id); //get the id
+})
+
+
+app.get('/search',(req,res)=>
+{
+    console.log(req.query.term); //Purpose: Get query string parameters (e.g., /search?term=book)
+    
+})
+
+/* body complete */
+
+app.use(express.on());
+
+app.post('/users', (req, res) => {
+  console.log(req.body.name);  // Access posted data
+});
+
+
+/* http headers  */
+
+app.get('/', (req, res) => {
+  console.log(req.headers['user-agent']);  // Browser info
+});
+
+
+/* http methods get,put,post,delete */
+app.use((req, res, next) => {
+  console.log(req.method);  // Logs request method
+  next();
+});
+
+
+
+/* to get the url */
+app.use((req, res, next) => {
+  console.log(req.url);  // "/products?id=2"
+  next();
+});
+
+/* path without query string */
+app.use((req, res, next) => {
+  console.log(req.path);  // "/products"
+  console.log(req.ip);
+  next();
+});
+
+/* for original url*/
+console.log(req.originalUrl);  // "/api/products/12?sort=desc"
+
+
+
+/* req.cookies (if using cookie-parser middleware)*/
+const cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
+app.get('/', (req, res) => {
+  console.log(req.cookies);  // { token: 'abc123' }
+});
+
+
+
+
+app.post('/submit/:id', (req, res) => {
+  console.log(req.params);     // { id: '123' }
+  console.log(req.query);      // { sort: 'asc' }
+  console.log(req.body);       // { name: 'John' }
+  console.log(req.headers);    // Request headers
+  console.log(req.method);     // "POST"
+});
+
+
+
+
+const PORT =6900,HOSTNAME ='127.0.0.1';
+
+app.listen(PORT,HOSTNAME,()=>
+{
+    console.log(`Server started at ${HOSTNAME}:${PORT} `);
+    
+})
+
+
+Purpose: Sends a plain response (string, object, or array)
+
+
+
+
+res.send('Hello');            // Sends plain text
+res.send({ name: 'John' });   // Sends ON (automatically)
+🔹 2. res.on()
+Purpose: Sends a ON response (recommended over send for APIs)
+
+
+
+
+res.on({ status: 'success', data: { name: 'John' } });
+🔹 3. res.status()
+Purpose: Sets the HTTP status code
+
+
+
+
+res.status(200).send('OK');
+res.status(404).send('Not found');
+res.status(500).on({ error: 'Something went wrong' });
+🔹 4. res.sendFile()
+Purpose: Sends a file as response (e.g., PDF, image)
+
+
+
+
+res.sendFile(__dirname + '/files/report.pdf');
+🔹 5. res.redirect()
+Purpose: Redirects the user to another URL
+
+
+
+
+res.redirect('/login');
+res.redirect('https://google.com');
+🔹 6. res.set() / res.setHeader()
+Purpose: Sets a custom response header
+
+
+
+
+res.set('Content-Type', 'text/html');
+res.setHeader('X-Powered-By', 'Node.');
+🔹 7. res.cookie()
+Purpose: Set a cookie in the browser (requires cookie-parser middleware)
+
+
+
+
+res.cookie('token', 'abc123', { httpOnly: true });
+🔹 8. res.clearCookie()
+Purpose: Clear a cookie
+
+
+
+
+res.clearCookie('token');
+🔹 9. res.end()
+Purpose: Ends the response (used in low-level cases)
+
+
+
+
+res.end();  // Send no data, just end the response
+🔹 10. res.download()
+Purpose: Triggers a file download in the browser
+
+
+
+
+res.download(__dirname + '/files/manual.pdf');
+✅ Common Combinations:
+
+
+
+res.status(200).on({ message: 'Success' });
+res.status(400).send('Bad Request');
+res.set('X-My-Custom-Header', '123');
+📌 Real Example:
+
+
+
+app.get('/user', (req, res) => {
+  const user = { name: 'Alice', age: 25 };
+
+  if (!user) {
+    return res.status(404).on({ error: 'User not found' });
+  }
+
+  res.status(200).on(user);
+});
+
+
+✅ Most Commonly Used req (Request) Properties
+Property / Method	Description	Example
+req.params	Route parameters	/users/:id → req.params.id
+req.query	Query string data	/users?name=John → req.query.name
+req.body	Body data (POST/PUT)	req.body.email (needs express.json())
+req.method	HTTP method used	GET, POST, etc.
+req.url	Full request path	/users/1?active=true
+req.headers	Request headers	req.headers['user-agent']
+req.get()	Shortcut for headers	req.get('Authorization')
+req.ip	Client IP address	Useful for logging/security
+req.cookies	Cookies sent by client	Requires cookie-parser
+req.originalUrl	URL before middleware changes	Useful in routers/middleware
+
+✅ Most Commonly Used res (Response) Methods
+Method / Property	Description	Example
+res.send()	Sends response (string/object/array)	res.send('OK')
+res.json()	Sends JSON data	res.json({ name: 'Alice' })
+res.status()	Sets HTTP status code	res.status(404).send('Not Found')
+res.redirect()	Redirects to another URL	res.redirect('/login')
+res.sendFile()	Sends a file	res.sendFile(__dirname + '/file.pdf')
+res.download()	Prompts file download	res.download('report.pdf')
+res.set() / res.setHeader()	Sets response header	res.set('X-App', 'CabApp')
+res.cookie()	Sets a cookie	res.cookie('token', 'abc123')
+res.clearCookie()	Clears a cookie	res.clearCookie('token')
+res.statusMessage	Sets custom status message	res.statusMessage = 'All Good'
+
+
+
+Then on frontend:
+
+
+response.data.success  // true
+response.data.data     // { id: 1, name: 'Ram' }
+
+ What is the structure of a typical response object in Axios?
+
+
+{
+  data: {},             // 👈 Actual response body from backend (most used)
+  status: 200,          // HTTP status code
+  statusText: "OK",     
+  headers: {},          
+  config: {},           // Axios config of the request
+  request: {}           // XMLHttpRequest object
+}
+So you mostly use:
+
+response.data
+
+response.data.data
+
+response.data.success
+
+response.status (if you need the HTTP status)
+
+✅ Summary
+Term	Source	Accessed in	Description
+response.data	Backend	Frontend (Axios)	Body/data sent by backend
+response.data.data	Backend	Frontend	Nested key inside response
+response.success	Custom	Frontend	Only if backend returns a success key
+
+
+
+response.success => true| false
+response.status => status 200,400,500,404,
+response.data.data ==> the original data is here {name:'ajay',age:20}
+
+
+
+✅ For SELECT Queries:
+You use result.recordset to access the fetched data.
+
+
+const result = await pool.request().query('SELECT * FROM newEmp');
+console.log(result.recordset); // 🔹 Array of rows
+
+✅ For INSERT, UPDATE, DELETE Queries:
+You use result.rowsAffected to check how many rows were impacted.
+
+
+const result = await pool.request()
+  .input('id', mssql.Int, 1)
+  .input('email', mssql.NVarChar(100), 'a@a.com')
+  .input('password', mssql.NVarChar(100), '123')
+  .query('INSERT INTO newEmp (id, email, password) VALUES (@id, @email, @password)');
+
+console.log(result.rowsAffected); // 🔹 [1] if one row inserted
+🔍 Structure of result Object
+Here’s what result usually looks like:
+
+
+{
+  recordsets: [ [ ... ] ],    // All result sets (multi-result queries)
+  recordset: [ ... ],         // First result set (used for SELECT)
+  rowsAffected: [1],          // Array showing rows affected per statement
+  output: {},                 // For output parameters (if any)
+  returnValue: undefined      // Return value from stored procedures
+}
+✅ Example: Use recordset or rowsAffected?
+Query Type	What to Use	Example
+SELECT	result.recordset	.recordset.map(row => row.email)
+INSERT	result.rowsAffected	[1] if one row was inserted
+UPDATE	result.rowsAffected	[1] if one row was updated
+DELETE	result.rowsAffected	[0] if no rows were deleted
+
+
+
+
+
+except id filed remainng will all are coming from body (req.body)
+
+id will come from req.params
