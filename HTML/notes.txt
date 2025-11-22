@@ -77,3 +77,16 @@ div tag is used to break the elements in seperate part
 div tag will take 100% width
 
 
+css
+---
+cascading style sheet
+fonts,colors,classSelector,idSelector
+
+classSelector
+--------------
+classname starts with . in css same class can be to multiple html elements
+
+
+idSelector 
+-----------
+id starts with # unique name is given for elements we cant give same id names to multiple elements
