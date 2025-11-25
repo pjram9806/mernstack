@@ -90,3 +90,13 @@ classname starts with . in css same class can be to multiple html elements
 idSelector 
 -----------
 id starts with # unique name is given for elements we cant give same id names to multiple elements
+
+
+how to display image in html
+--------------------------------
+we use img tag & it is also self closing tag 
+
+
+align-items:center it make the items center vertically (y-axis)
+
+text-align:center  it make the items center horizontal (x-axis)

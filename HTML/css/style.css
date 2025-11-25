@@ -1,0 +1,40 @@
+.img-1{
+    width: 100%;
+    height:500px;
+}
+.card{
+    width: 50%;
+    margin-top: 10px;
+    border: 5px solid red;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.main{
+width: 75%;
+margin: auto;
+}
+.img-3{
+    border-radius: 50%;
+}
+.center{
+    text-align: center;
+}
+.w-50{
+    width: 50%;
+}
+.chat-icon{
+    width: 90px;
+    position: fixed;
+    right:25px;
+    bottom: 25px;
+    background-color: orange;
+}
+.search{
+    margin-top: 10px;
+    position: relative;
+}
+.suggestions{
+    position:absolute;
+    top: 20px;
+}
