@@ -1,6 +1,6 @@
 node js
 --------
-node js is a runtime for javascript environment built on chrome engine v8
+node js is a runtime environment for javascript environment built on chrome engine v8
 
 Node.js uses an event-driven, non-blocking model.It can handle many connections at once without waiting for one to finish before starting another.
 
@@ -9,7 +9,48 @@ to work with node js u need to install node in our system from official docs(nod
 node -v ==> to check that node is installed or Not
 
 
+Advantages Of Node Js
+----------------------
+node js is a verstile runtime environment for javascript and it is well suited for building a wide range of dynamic applications including web apps
+
+
+Authentication:authentication is a process of verifying the identity of a user these are various authentication methods u can use in node js 
+
+authorization:authorization determines what actions a user  is allowed to perform within the application after they have been authenticated
+
+performing user transactions with in a db in node app involves interacting with db  to read,write,update or delete related to users
+
+application security ,scalability
+
+accessing api in a node js app involves making http requests to external services or apis to retrive data  or interact with remote resources 
+
+
+prerequsites
+------------
+basics
+es6
+arrow functions,callback functions destructuring,promises,async await(aynchronous)
+
+
+REPL
+----
+R ==> Read
+E ==> Evaluate
+P ==> Print
+L ==> Loop
+
+but repl is not recommended
+node runs on a server not in browser  
+
+cli
+----
+command line interface
+node runs on a server not in browser  
+
+
+
 inbuilt modules in node js are 
+------------------------------
 
 fs,path,http,os etc 
 
