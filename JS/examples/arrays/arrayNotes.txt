@@ -1,0 +1,119 @@
+arrays
+--------
+
+arrays are kept in []
+
+let numbers = [10,20]
+console.log(numbers);
+console.log(numbers[0]); - 10
+console.log(numbers[1]); - 20
+
+
+
+normal for loop
+----------------
+
+for(i = 0; i< numbers.length ; i++){
+    console.log(numbers[i])
+}
+
+forEach loop
+-------------
+numbers.forEach((n)=>{
+console.log(n)
+})
+
+
+find,filter
+-------------
+filter ==> returns all matching elements
+find ==> returns only first matching element
+
+below is the example for above find & filter
+let numbers = [10,20,33,40,68];
+
+
+//filter
+let testNo = numbers.filter((n)=>{
+    return n > 30;
+});
+
+console.log(testNo); ==> 33,40,68
+
+
+//find
+
+let findGt = numbers.find((n)=>{
+return n >30;
+});
+
+console.log(findGt) ==> 33
+
+
+
+
+
+🔥 ARRAYS PRACTICE PLAN (Beginner → Advanced)
+✅ Level 1: Basic Array Practice
+1. Create an array
+const numbers = [10, 20, 30, 40];
+
+2. Access elements
+console.log(numbers[0]); // 10
+console.log(numbers[3]); // 40
+
+3. Add/remove
+numbers.push(50);   // add at end
+numbers.pop();      // remove from end
+numbers.unshift(5); // add at start
+numbers.shift();    // remove from start
+
+⭐ Tasks to Practice
+
+Create an array of 5 names
+
+Add one name
+
+Remove last name
+
+Print all names
+
+✅ Level 2: Loops + Arrays
+4. for loop
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
+
+5. forEach
+numbers.forEach((num) => console.log(num));
+
+⭐ Tasks
+
+Print all even numbers
+
+Print only numbers > 50
+
+Print “Name: ___” for each item in array
+
+✅ Level 3: Search + Filter
+6. filter()
+const even = numbers.filter(n => n % 2 === 0);
+
+7. find()
+const num = numbers.find(n => n === 20);
+
+⭐ Tasks
+
+From [10,20,30,40,50], filter numbers > 25
+
+Find first number divisible by 5
+
+✅ Level 4: Map + Transform
+8. map()
+const doubled = numbers.map(n => n * 2);
+
+⭐ Tasks
+
+Convert prices [100,200,300] → taxes added (price * 1.18)
+
+Convert names to uppercase

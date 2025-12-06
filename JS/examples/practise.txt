@@ -1,0 +1,165 @@
+Example — Arrays
+
+Write code for:
+
+Find max number
+
+Find min
+
+Reverse array
+
+Filter even numbers
+
+Find sum
+
+Sort array
+
+Remove duplicates
+
+Count frequency
+
+Example — Functions
+
+Function with no return
+
+Function with return value
+
+Function with parameters
+
+Function that returns object
+
+Function inside object
+
+Arrow vs normal function
+
+Callback function
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+2️⃣ Step 2: Build a Small Mini Project Using Only That Concept
+
+This is the secret to gaining real grip.
+
+Examples:
+🔹 If learning Arrays
+
+Build:
+
+Movie list
+
+Students marks analysis
+
+Product filter
+
+Shopping cart array logic
+
+🔹 If learning Objects
+
+Build:
+
+User profile object
+
+Employee record system
+
+Product catalog
+
+🔹 If learning Functions
+
+Build:
+
+Calculator
+
+Reusable utility functions (add, multiply, formatName, etc.)
+
+Mini projects remove confusion and give confidence.
+
+3️⃣ Step 3: Solve 3 Real-Life Problems
+
+Pick real scenarios from daily life and convert them into code.
+
+Example
+
+Problem: Your expenses of a month
+→ Store in array
+→ Write functions for total, average
+
+Problem: User login validation
+→ Use objects + functions
+
+Problem: Convert form data into JSON
+→ Practice object + JSON.stringify + JSON.parse
+
+This builds practical real-time thinking, which is needed for interviews & job tasks.
+
+⭐ Extra Tips: How to Get Strong Grip
+✔ Tip 1: Write code WITHOUT seeing Google or video
+
+Even if it takes time, this builds your logic.
+
+✔ Tip 2: Explain the concept to yourself
+
+Speak out:
+“Array starts from index 0… return ends a function…”
+This activates your memory.
+
+✔ Tip 3: Write your own notes
+
+Not full notes — just key points:
+
+One line definition
+
+Two examples
+
+When to use
+
+When not to use
+
+✔ Tip 4: Try to teach someone
+
+When you teach, your brain understands 2× better.
+
+✔ Tip 5: Solve the same problem in different ways
+
+Example:
+
+Using for
+
+Using forEach
+
+Using map()
+
+Using reduce()
+
+This builds mastery.
+
+📌 Summary
+
+To get a strong grip on any concept:
+
+🔥 Learn → Practice 5–10 problems → Build mini project → Solve real-life problems
+
+If you follow this for:
+
+Functions
+
+Arrays
+
+Objects
+
+JSON
+
+Return statements
+
+Async
+
+Promises
+
+You will reach mastery very fast.
