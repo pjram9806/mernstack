@@ -7,6 +7,41 @@ var age = 28;
 let age = 30;
 const name ='santhosh';
 
+to remove spaces we use the method called trim()
+
+ex:
+const email = '   santhosh@gmail.com';
+const trimmedEmail = email.trim();
+console.log(trimmedEmail)
+
+
+find length of any string
+
+let name ='arjun';
+let lengthOfName = name.length;
+console.log(lengthOfName);
+
+we cant get length of number either we need to change the number to string by using string method  or just keep the no in quotes
+
+string concatination
+---------------------
+let firstName = 'ajay',lastName = 'krishna',fullName = firstName + lastName;
+console.log(fullName);
+
+split(',') ==> it push the data into array
+ex:
+let str = "apple,banana,orange";
+let result = str.split(',');
+
+console.log(result); ==> ["apple", "banana", "orange"]
+
+
+
+
+
+
+
+
 dom
 ------
 document object model(dom) ==> manipulating html & css html dom tree
